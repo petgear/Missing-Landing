@@ -83,12 +83,12 @@ styles/ — глобальные стили и переменные
 1. Клонировать репозиторий:
 
 ```bash
-git clone <URL репозитория>
+git clone https://github.com/petgear/Missing-Landing.git
 ```
 
 2. Перейти в директорию проекта:
 ```bash
-cd <имя_папки_проекта>
+cd Missing-Landing
 ```
 
 3. Установить зависимости:
@@ -109,4 +109,4 @@ npm run dev
 MIT
 
 ## Демо
-[Открыть лендинг в браузере](url)
+[Открыть лендинг в браузере](https://petgear.github.io/Missing-Landing/)
