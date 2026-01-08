@@ -1,0 +1,17 @@
+.card {
+  padding: 24px;
+  border-radius: 16px;
+  background: white;
+}
+
+.default {
+  border: none;
+}
+
+.outlined {
+  border: 1px solid #ddd;
+}
+
+.elevated {
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}

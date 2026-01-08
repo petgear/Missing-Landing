@@ -1,0 +1,101 @@
+.section {
+  width: 100%;
+  height: auto;
+  border-bottom: 1px solid var(--border-color);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.945);
+}
+
+.logo {
+  font-weight: 900;
+  font-size: 36px;
+  color: var(--text-color);
+  cursor: pointer;
+  transition: 
+    background-color 0.2s ease,
+    color 0.2s ease,
+    transform 0.15s ease,
+    box-shadow 0.15s ease,
+    opacity 1s ease;
+}
+
+.logo:hover {
+  opacity: 0.05;
+}
+
+.inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.button {
+  background-color: var(--button-bg);
+  color: var(--button-text);
+    transition: 
+    background-color 0.2s ease,
+    color 0.2s ease,
+    transform 0.15s ease,
+    box-shadow 0.15s ease;
+}
+
+.button:hover {
+  color: var(--accent-color);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+.button:active {
+  transform: translateY(0);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+
+.nav {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+  justify-content: end;
+  flex-direction: row;
+}
+
+.section {
+  padding: 24px 0;
+  background-color: var(--header-color);
+}
+
+.nav a {
+  text-decoration: none;
+  color: var(--text-color);
+  font-weight: 200;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.nav a:hover {
+  color: var(--accent-color);
+}
+
+
+@media (max-width: 768px) {
+  .inner {
+    flex-direction: column; /* Логотип сверху, меню снизу */
+    align-items: flex-start;
+    gap: 16px;
+  }
+
+  .logo {
+    font-size: 28px;
+    align-self: center;
+  }
+
+  .nav {
+    flex-direction: column; /* ссылки в колонку */
+    gap: 12px;
+    width: 100%;
+  }
+
+  .button {
+    width: 100%; /* кнопка на всю ширину */
+    text-align: center;
+  }
+}

@@ -1,0 +1,37 @@
+.dark {
+  --bg-color: #1d1d1d; /* основной фон */
+  --second-color: #0c0c0c; /* вторичный */ 
+  
+  --header-color: rgb(8, 8, 8); /* header/footer */
+
+  --text-color: #f5f5f5;
+
+  --accent-color: #46e0fc;
+
+  --button-bg: rgb(255, 255, 255) ;
+  --button-text: black ;
+
+  --muted-text: rgb(107, 107, 107);
+
+  --card-color: #131313;
+  --border-color: #2a2a2a ;
+}
+
+.light {
+  --bg-color: #ffffff; /* основной фон */
+  --second-color:  #f5f3ff ; /* вторичный */
+
+  --header-color: #ffffff; /* header/footer */
+
+  --text-color: #111111;
+
+  --accent-color: #0077ff;
+
+  --button-bg: black;
+  --button-text: white;
+  
+  --muted-text: rgb(121, 121, 121);
+
+  --card-color: #d4d9f0;
+  --border-color: #ddd;
+}

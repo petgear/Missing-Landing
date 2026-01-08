@@ -1,0 +1,30 @@
+.section {
+  padding: 80px 0;
+}
+
+.text {
+  max-width: 720px;
+}
+
+.text p {
+  margin-bottom: 16px;
+  line-height: 1.6;
+  color: #444;
+}
+
+.lead {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.title {
+  margin: 32px 0 16px;
+  font-size: 32px;
+  font-weight: 600;
+  color: #111;
+}
+
+.accent {
+  font-size: 18px;
+  color: #000;
+}

@@ -1,0 +1,106 @@
+.hero {
+  padding: 80px 0;
+  background-color: var(--bg-color);
+}
+
+.inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 48px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.content {
+  max-width: 520px;
+}
+
+.content h1 {
+  font-size: 48px;
+  line-height: 1.2;
+  font-weight: 600;
+  margin: 0 0 26px;
+  color: var(--text-color);
+}
+
+.content p {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 24px;
+  color: var(--text-color);
+}
+
+.button {
+  margin-bottom: 16px;
+  background-color: var(--button-bg);
+  color: var(--button-text);
+    transition: 
+    background-color 0.2s ease,
+    color 0.2s ease,
+    transform 0.15s ease,
+    box-shadow 0.15s ease;
+}
+
+.button:hover {
+  color: var(--accent-color);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+.button:active {
+  transform: translateY(0);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.solution {
+  font-size: 14px;
+  color: var(--muted-text);
+  margin-top: 16px;
+}
+
+.illustration {
+  height: 320px;
+  margin: 0;
+  max-width: 600px;
+  width: 600px;
+  border-radius: 24px;
+  overflow: hidden;
+}
+
+.illustration img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: inherit;
+}
+
+@media (max-width: 768px) {
+  .inner {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .content h1,
+  .content p {
+    width: 100%; /* теперь текст не выходит за экран */
+    text-align: center;
+  }
+
+  .button {
+    width: 100%; /* кнопка растягивается по контейнеру */
+  }
+
+  .illustration {
+    order: 1;
+    width: 100%; /* растягиваем картинку по ширине */
+    max-width: 100%;
+    height: auto;
+  }
+
+  .solution {
+    font-size: 12px;
+  }
+}
+
