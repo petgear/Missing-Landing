@@ -19,9 +19,9 @@ const worths: Worth[] = [
     price: '₽19900', 
     description: 'Базовый анализ и рекомендации',
     features: [
-      'Анализ ситуации',
-      'Подбор визового пути',
-      'Чек-листы и рекомендации',
+      '- Анализ ситуации',
+      '- Подбор визового пути',
+      '- Чек-листы и рекомендации',
     ],
     highlighted: false,
   },
@@ -32,9 +32,9 @@ const worths: Worth[] = [
     price: '₽49900',
     description: 'Полное сопровождение процесса',
     features: [
-      'Всё из тарифа «Эконом»',
-      'Помощь с документами',
-      'Консультации на этапе подачи',
+      '- Всё из тарифа «Эконом»',
+      '- Помощь с документами',
+      '- Консультации на этапе подачи',
     ],
     highlighted: true,
   },
@@ -45,9 +45,9 @@ const worths: Worth[] = [
     price: '₽99900',
     description: 'VIP сопровождение с экспертом',
     features: [
-      'Полное сопровождение',
-      'Приоритетная поддержка',
-      'Помощь с адаптацией после переезда',
+      '- Полное сопровождение',
+      '- Приоритетная поддержка',
+      '- Помощь с адаптацией',
     ],
     highlighted: false,
   },
@@ -68,8 +68,8 @@ export function Prices() {
               className={`${styles.card} ${worth.highlighted ? styles.highlighted : ''}`}
               >
                 <h3 className={styles.title}>{worth.name}</h3>
-                <span className={styles.price}>{worth.price}</span>
                 <p className={styles.description}>{worth.description}</p>
+                <span className={styles.price}>{worth.price}</span>
 
                 <ul className={styles.features}>
                   {worth.features.map((feature, index) => (
